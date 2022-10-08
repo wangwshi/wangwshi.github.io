@@ -1,22 +1,22 @@
-import './App.css';
+import './App.css'; // Not currently used
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom'
-
-import Home from './components/Home'
-import About from './components/About'
-import Art from './components/Art'
-import CV from './components/CV'
-import Contact from './components/Contact'
+import Navbar from './components/Navbar'
+import About from './pages/About'
+import Art from './pages/Art'
+import CV from './pages/CV'
+import Contact from './pages/Contact'
 
 function App() {
   return (
     <div className="">
       <Router>
+        <Navbar/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<About/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/art" element={<Art/>} />
           <Route path="/cv" element={<CV/>} />
