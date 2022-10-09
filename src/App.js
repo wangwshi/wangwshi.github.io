@@ -9,21 +9,25 @@ import About from './pages/About'
 import Art from './pages/Art'
 import CV from './pages/CV'
 import Contact from './pages/Contact'
+import { Page } from './components/PageElements';
 
 function App() {
   return (
-    <div className="">
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<About/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/art" element={<Art/>} />
-          <Route path="/cv" element={<CV/>} />
-          <Route path="/contact" element={<Contact/>} />
-        </Routes>
-      </Router>
-    </div>
+    <Page.Container>
+      <Page.Body>
+        <Router>
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<About/>} />
+            <Route path="/wangwshi.github.io" element={<About/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/art" element={<Art/>} />
+            <Route path="/cv" element={<CV/>} />
+            <Route path="/contact" element={<Contact/>} />
+          </Routes>
+        </Router>
+      </Page.Body>
+    </Page.Container>
   );
 }
 

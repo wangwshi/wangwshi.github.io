@@ -5,7 +5,7 @@ export const Nav = {
   Wrapper: styled.nav`
     flex: 1;
     align-self: flex-start;
-    padding: 0.5rem 3rem;
+    padding: 2rem 0rem;
 
     display: flex;
     justify-content: space-between;
@@ -13,8 +13,11 @@ export const Nav = {
 
     background-color: white;
   `,
-  Logo: styled.h1`
-    padding: 1rem 0rem;
+  Logo: styled(Link)`
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
   `,
   Items: styled.ul`
     display: flex;

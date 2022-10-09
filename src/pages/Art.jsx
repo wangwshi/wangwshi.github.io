@@ -1,9 +1,10 @@
 import React from "react";
+import ImageGrid from '../components/ImageGrid';
 
 function Art() {
   return (
     <div className="Art">
-      <h1>Art Page</h1>
+      <ImageGrid/>
     </div>
   );
 }
