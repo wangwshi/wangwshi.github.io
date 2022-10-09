@@ -45,7 +45,7 @@ function ImageGrid() {
   const traditionalGrid = getGrid(traditionalImages, digitalGrid.length);
 
   return(
-    <Page.Body>
+    <>
       {/* <div>
         {grid}
       </div> */}
@@ -87,7 +87,7 @@ function ImageGrid() {
         imageCaption={lightboxImages[photoIndex].name}
       />
     }
-    </Page.Body>
+    </>
   );
 }
 
