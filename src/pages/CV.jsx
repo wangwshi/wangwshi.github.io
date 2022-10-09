@@ -1,13 +1,17 @@
 import React from "react";
-import { Document } from 'react-pdf'
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
+import resume from "../assets/resume.pdf";
 
 function CV() {
   return (
     <div className="CV">
       <h1>Resume</h1>
-      <object className="pdf" data="./resume.pdf" type="application/pdf" width="100%" height="100%">
-          <p>Alternative text - include a link to the PDF!</p>
-      </object>
+      <Document
+        className={"pdf"}
+        file={resume}
+      >  
+        <Page pageNumber={1} />
+      </Document>
     </div>
   );
 }

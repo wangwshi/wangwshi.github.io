@@ -54,6 +54,9 @@
   clear: both;
 }
 
-.pdf {
+.pdf > div > canvas {
   min-height: 80vh;
+  min-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
