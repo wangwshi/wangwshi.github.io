@@ -73,7 +73,11 @@ function ImageGrid() {
   const traditionalGrid =<IGrid images={traditionalImages} indexOffset={digitalGrid.length} setPhotoIndex={setPhotoIndex} setIsOpen={setIsOpen} />;
 
   return(
-    <Page.Body>
+    <>
+      {/* <div>
+        {grid}
+      </div> */}
+
       <div id="digital">
         <Page.Header>Digital Art</Page.Header>
         {digitalGrid}
@@ -98,7 +102,7 @@ function ImageGrid() {
         imageCaption={lightboxImages[photoIndex].name}
       />
     }
-    </Page.Body>
+    </>
   );
 }
 

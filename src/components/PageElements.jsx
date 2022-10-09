@@ -35,6 +35,22 @@ export const Page = {
     padding: 1rem 0;
     margin: auto;
     line-height: 2rem;
+  `,
+  CenterHeader: styled.div`
+    display: table;
+    alignItems: center;
+    justifyContent: center;
+    margin: 2rem auto 1rem auto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 2rem;
+  `,
+  CenterContent: styled.div`
+    display: table;
+    alignItems: center;
+    justifyContent: center;
+    margin: auto;
+    line-height: 1em;
   `
 };
 
