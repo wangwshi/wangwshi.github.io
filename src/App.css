@@ -53,3 +53,7 @@
   display: table;
   clear: both;
 }
+
+.pdf {
+  min-height: 80vh;
+}
