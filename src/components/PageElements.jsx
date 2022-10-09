@@ -5,6 +5,14 @@ export const Page = {
     display: inline-block;
     width: 100%;
   `,
+  Header: styled.div`
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 2em;
+  `,
   Body: styled.div`
     display: block;
     width: 85%;
@@ -18,7 +26,6 @@ export const Page = {
   Intro: styled.div`
     width: 100%;
     margin: 2rem auto 0 auto;
-
     font-weight: bold;
     font-size: 20px;
     line-height: 2rem;
@@ -27,7 +34,6 @@ export const Page = {
     width: 100%;
     padding: 1rem 0;
     margin: auto;
-    
     line-height: 2rem;
   `
 };
@@ -35,7 +41,8 @@ export const Page = {
 export const Grid = {
   Image: styled.img`
     display: flex;
-    float: left;
-    margin: 1rem;
-  `,
+    max-width: 80vh;
+    margin: 2rem auto;
+    cursor: pointer;
+  `
 }

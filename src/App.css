@@ -53,3 +53,10 @@
   display: table;
   clear: both;
 }
+
+.pdf > div > canvas {
+  min-height: 80vh;
+  min-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
