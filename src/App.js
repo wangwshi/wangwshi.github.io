@@ -1,4 +1,4 @@
-import './App.css'; // Not currently used
+import './App.scss'; // Not currently used
 
 import {
   BrowserRouter as Router,

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Page, Grid } from '../components/PageElements';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import GridListTileBar from '@material-ui/core/GridListTileBar';
 
 function importAll(r) {
   return r.keys().map(r);
@@ -9,10 +10,45 @@ function importAll(r) {
 const images = importAll(require.context('../assets/fullimages', false, /\.(png|jpe?g|svg)$/)).sort();
 const thumbnails = importAll(require.context('../assets/thumbnails', false, /\.(png|jpe?g|svg)$/)).sort();
 
+const IGrid = ({images, indexOffset = 0, setPhotoIndex, setIsOpen}) => {
+  return images.map((val, i) => (
+    <GridImage
+      val={val}
+      i={i}
+      indexOffset={indexOffset}
+      setPhotoIndex={setPhotoIndex}
+      setIsOpen={setIsOpen}
+    />
+    ));
+}
+
+const GridImage = ({val, i, indexOffset, setPhotoIndex, setIsOpen}) => {
+  const [showSubtitle, setShowSubtitle] = useState(false);
+  return <div className="art">
+      <Grid.Image className={""} src={val.thumbnail} alt="" key={i} onClick={() => {
+        setPhotoIndex(i + indexOffset);
+        setIsOpen(true);
+      }}
+      onMouseEnter={() => {
+        setShowSubtitle(true);
+      }}
+
+      onMouseOut={() => {
+        setShowSubtitle(false);
+      }}
+      />
+      { showSubtitle && <GridListTileBar
+        className="subtitle"
+        subtitle={val.name?.split("-").at(-1)}
+        title={<span>{val.date.toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}</span>}
+        />
+      }
+    </div>
+}
+
 
 function ImageGrid() {
   const cleanImageNames = images.map((img, i) => {
-
     const name = img.split("/")?.at(-1).split(".").at(0);
     const thumbnail = thumbnails[i];
     return { image: img, name: name, thumbnail: thumbnail}
@@ -32,17 +68,9 @@ function ImageGrid() {
   const [stateFlipper, setStateFlipper] = useState(false); // this is such a dumb hack but I blame the package honestly
 
 
-  const getGrid = (images, indexOffset = 0) => {
-    return images.map((val, i) => {
-      return <Grid.Image src={val.thumbnail} alt="" key={i} onClick={() => {
-        setPhotoIndex(i + indexOffset);
-        setIsOpen(true);
-      }}
-      />
-    });
-  }
-  const digitalGrid = getGrid(digitalImages);
-  const traditionalGrid = getGrid(traditionalImages, digitalGrid.length);
+
+  const digitalGrid = <IGrid images={digitalImages} setPhotoIndex={setPhotoIndex} setIsOpen={setIsOpen} />;
+  const traditionalGrid =<IGrid images={traditionalImages} indexOffset={digitalGrid.length} setPhotoIndex={setPhotoIndex} setIsOpen={setIsOpen} />;
 
   return(
     <>
@@ -58,20 +86,7 @@ function ImageGrid() {
         <Page.Header>Traditional Art</Page.Header>
         {traditionalGrid}
       </div>
-      {/*
-      <div className="row">
-        <div className="column">
-          {grid.filter((img, i) => i % 3 === 0)}
-        </div>
-        <div className="column">
-          {grid.filter((img, i) => i % 3 === 1)}
 
-        </div>
-        <div className="column">
-          {grid.filter((img, i) => i % 3 === 2)}
-        </div>
-      </div>
-      */}
       { isOpen && <Lightbox
         mainSrc={lightboxImages[photoIndex].image}
         nextSrc={lightboxImages[(photoIndex + 1) % lightboxImages.length].image}

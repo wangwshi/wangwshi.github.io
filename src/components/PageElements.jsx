@@ -57,8 +57,7 @@ export const Page = {
 export const Grid = {
   Image: styled.img`
     display: flex;
-    max-width: 80vh;
-    margin: 2rem auto;
+    max-width: 60vh;
     cursor: pointer;
   `
 }
