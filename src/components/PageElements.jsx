@@ -36,8 +36,6 @@ export const Grid = {
   Image: styled.img`
     display: flex;
     float: left;
-    min-width: 300px;
-    width: 30%;
     margin: 1rem;
-  `
+  `,
 }
