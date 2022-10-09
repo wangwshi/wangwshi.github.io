@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wangwshi.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/wangwshi.github.io/static/js/main.5385457f.js",
+    "main.js": "/wangwshi.github.io/static/js/main.6169762e.js",
     "static/js/787.87232898.chunk.js": "/wangwshi.github.io/static/js/787.87232898.chunk.js",
     "static/media/2021(10th) November - Digital.jpg": "/wangwshi.github.io/static/media/2021(10th) November - Digital.4babcbc253a116f894cb.jpg",
     "static/media/2022(10th) March - Digital.jpg": "/wangwshi.github.io/static/media/2022(10th) March - Digital.ea2d609fd5af3d7e4653.jpg",
@@ -33,11 +33,11 @@
     "static/media/2022(10th) January - Digital.jpg": "/wangwshi.github.io/static/media/2022(10th) January - Digital.02e367fdda56b51a5b08.jpg",
     "index.html": "/wangwshi.github.io/index.html",
     "main.073c9b0a.css.map": "/wangwshi.github.io/static/css/main.073c9b0a.css.map",
-    "main.5385457f.js.map": "/wangwshi.github.io/static/js/main.5385457f.js.map",
+    "main.6169762e.js.map": "/wangwshi.github.io/static/js/main.6169762e.js.map",
     "787.87232898.chunk.js.map": "/wangwshi.github.io/static/js/787.87232898.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.5385457f.js"
+    "static/js/main.6169762e.js"
   ]
 }
