@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.column {
+  width: 33%;
+  padding: 1rem;
+}
+
+.row{ 
+  display: inline-flex;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
