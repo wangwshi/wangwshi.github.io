@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wangwshi.github.io/static/css/main.e7c734f1.css",
-    "main.js": "/wangwshi.github.io/static/js/main.75d28b3e.js",
+    "main.js": "/wangwshi.github.io/static/js/main.b90d0d5f.js",
     "static/media/2021(10th) November - Digital.jpg": "/wangwshi.github.io/static/media/2021(10th) November - Digital.64229186f0397f4e81c4.jpg",
     "static/media/2022(10th) March - Digital.jpg": "/wangwshi.github.io/static/media/2022(10th) March - Digital.4d7efbf8bd9f12c6ef74.jpg",
     "static/media/2021(10th) October - Digital.jpg": "/wangwshi.github.io/static/media/2021(10th) October - Digital.b6422afff4210947de56.jpg",
@@ -23,6 +23,7 @@
     "static/media/2022(12th) June - Graphite.png": "/wangwshi.github.io/static/media/2022(12th) June - Graphite.55395e4dfcb3342258d8.png",
     "static/media/2021(10th) December - Digital.jpg": "/wangwshi.github.io/static/media/2021(10th) December - Digital.665c4d229099902fa279.jpg",
     "static/media/2020(9th) November - Pen_Sharpie.png": "/wangwshi.github.io/static/media/2020(9th) November - Pen_Sharpie.2900ee169ba966f0baef.png",
+    "static/media/pdf.worker.js": "/wangwshi.github.io/static/media/pdf.worker.5a4781656f64092ca08b.js",
     "static/media/2022(10th) January - Digital(2).jpg": "/wangwshi.github.io/static/media/2022(10th) January - Digital(2).cfd5fa5b103272c3b677.jpg",
     "static/media/2022(10th) January - Digital(1).jpg": "/wangwshi.github.io/static/media/2022(10th) January - Digital(1).1411e2fb696c2940131f.jpg",
     "static/media/2022(10th) April - Digital, Colored Sketch.jpg": "/wangwshi.github.io/static/media/2022(10th) April - Digital, Colored Sketch.a38e16c1ff23c4d11c8f.jpg",
@@ -30,12 +31,14 @@
     "static/media/2022(12th) August - Digital WIP.jpg": "/wangwshi.github.io/static/media/2022(12th) August - Digital WIP.e5e84d926abea35c797e.jpg",
     "static/media/2022(10th) May - Acrylic on Ceiling Tile.jpg": "/wangwshi.github.io/static/media/2022(10th) May - Acrylic on Ceiling Tile.21905e8d9ac025d0c658.jpg",
     "static/media/2022(10th) January - Digital.jpg": "/wangwshi.github.io/static/media/2022(10th) January - Digital.02e367fdda56b51a5b08.jpg",
+    "static/media/Hannah Wang Resume.pdf": "/wangwshi.github.io/static/media/Hannah Wang Resume.ae95bb40f46f927d66a7.pdf",
+    "static/media/hannah.jpg": "/wangwshi.github.io/static/media/hannah.138d6d9d9b8169c37051.jpg",
     "index.html": "/wangwshi.github.io/index.html",
     "main.e7c734f1.css.map": "/wangwshi.github.io/static/css/main.e7c734f1.css.map",
-    "main.75d28b3e.js.map": "/wangwshi.github.io/static/js/main.75d28b3e.js.map"
+    "main.b90d0d5f.js.map": "/wangwshi.github.io/static/js/main.b90d0d5f.js.map"
   },
   "entrypoints": [
     "static/css/main.e7c734f1.css",
-    "static/js/main.75d28b3e.js"
+    "static/js/main.b90d0d5f.js"
   ]
 }
