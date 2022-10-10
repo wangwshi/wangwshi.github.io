@@ -5,23 +5,28 @@ export const Page = {
     display: inline-block;
     width: 100%;
   `,
-  Header: styled.div`
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 2em;
-  `,
   Body: styled.div`
     display: block;
     width: 85%;
     max-width: 1400px;
     margin: 0 auto;
   `,
-  TextBox: styled.div`
+  ContentBox: styled.div`
     display: inline-block;
     width: 50%;
+    vertical-align: top;
+  `,
+  ImgBox: styled.div`
+    display: table;
+    padding: 2rem 1rem 0 2rem;
+    margin-left: auto;
+  `,
+  Img: styled.img`
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 70vh;
   `,
   Intro: styled.div`
     width: 100%;
@@ -36,10 +41,10 @@ export const Page = {
     margin: auto;
     line-height: 2rem;
   `,
-  CenterHeader: styled.div`
+  Header: styled.div`
     display: table;
-    alignItems: center;
-    justifyContent: center;
+    align-items: center;
+    justify-content: center;
     margin: 2rem auto 1rem auto;
     font-weight: bold;
     font-size: 24px;
@@ -47,8 +52,8 @@ export const Page = {
   `,
   CenterContent: styled.div`
     display: table;
-    alignItems: center;
-    justifyContent: center;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     line-height: 1em;
   `

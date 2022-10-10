@@ -4,7 +4,7 @@ import { Page } from '../components/PageElements';
 function Contact() {
   return (
     <div className="Contact">
-      <Page.CenterHeader>Contact</Page.CenterHeader>
+      <Page.Header>Contact</Page.Header>
       <Page.CenterContent>
         <p>hanglowan@gmail.com</p>
       </Page.CenterContent>
