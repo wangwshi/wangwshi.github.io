@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wangwshi.github.io/static/css/main.e7c734f1.css",
-    "main.js": "/wangwshi.github.io/static/js/main.39fbf802.js",
+    "main.js": "/wangwshi.github.io/static/js/main.75d28b3e.js",
     "static/media/2021(10th) November - Digital.jpg": "/wangwshi.github.io/static/media/2021(10th) November - Digital.64229186f0397f4e81c4.jpg",
     "static/media/2022(10th) March - Digital.jpg": "/wangwshi.github.io/static/media/2022(10th) March - Digital.4d7efbf8bd9f12c6ef74.jpg",
     "static/media/2021(10th) October - Digital.jpg": "/wangwshi.github.io/static/media/2021(10th) October - Digital.b6422afff4210947de56.jpg",
@@ -32,10 +32,10 @@
     "static/media/2022(10th) January - Digital.jpg": "/wangwshi.github.io/static/media/2022(10th) January - Digital.02e367fdda56b51a5b08.jpg",
     "index.html": "/wangwshi.github.io/index.html",
     "main.e7c734f1.css.map": "/wangwshi.github.io/static/css/main.e7c734f1.css.map",
-    "main.39fbf802.js.map": "/wangwshi.github.io/static/js/main.39fbf802.js.map"
+    "main.75d28b3e.js.map": "/wangwshi.github.io/static/js/main.75d28b3e.js.map"
   },
   "entrypoints": [
     "static/css/main.e7c734f1.css",
-    "static/js/main.39fbf802.js"
+    "static/js/main.75d28b3e.js"
   ]
 }
