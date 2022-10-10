@@ -9,9 +9,6 @@ function Contact() {
         <p>hanglowan@gmail.com</p>
       </Page.CenterContent>
       <Page.CenterContent>
-        <p>469-740-1402</p>
-      </Page.CenterContent>
-      <Page.CenterContent>
         <p>@refinedchili on Instagram</p>
       </Page.CenterContent>
     </div>
